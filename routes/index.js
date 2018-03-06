@@ -15,7 +15,7 @@ router.post('/tweets', function(req, res) {
   let name = req.body.name;
   let text = req.body.text;
   tweetBank.add(name, text);
-  res.redirect('/');
+  res.redirect('back');
 });
 
 router.get('/:fileName', function (req, res) {
