@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Sticky Footer Navbar Template for Bootstrap</title>
+    <title>Dead Twitter</title>
 
     <!-- Bootstrap core CSS -->
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
@@ -37,7 +37,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">Twitter.js</a>
+            <a class="navbar-brand" href="/">Dead Twitter.js</a>
           </div>
           <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
@@ -91,7 +91,7 @@
     });
     // When 'new_tweet' events are fired, do something with the packaged tweet
     socket.on('newTweet', function (tweet) { 
-      let div = document.createElement('new-tweet');
+      let div = document.createElement('append-tweet');
       div.innerHTML = '<img class="deadbird" src="/assets/deadbird.jpeg"><h4 class="user"><a href="/users/'+tweet.name+'"><em>'+tweet.name+'</em></a></h4><p class="tweet">'+tweet.tweet+'</p>'
       document.getElementById('tweet-feed').append(div);
       

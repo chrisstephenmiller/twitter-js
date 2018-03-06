@@ -68,11 +68,19 @@ code {
 }
 
 .deadbird {
-  height: 35px;
-  width: 35px;
+  height: 60px;
+  width: 75px;
+  float: left;
 }
 
 #new-tweet {
   margin: 20px;
   text-align: center;
+}
+
+#single-tweet {
+  padding: 10px;
+}
+#single-tweet p, #single-tweet h4 {
+  padding: 10px;
 }
