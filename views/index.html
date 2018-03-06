@@ -23,10 +23,11 @@
     <b>Your Name</b>
     <br> 100 followers
   </div>
-  <div class="col-md-9">
+  <div id = 'tweet-feed' class="col-md-9">
 
     <!-- display tweets here -->
     {% for tweet in tweets %}
+    <div>
     <img class="deadbird" src="/assets/deadbird.jpeg">
     <h4 class="user">
       <a href="/users/{{tweet.name}}"><em>{{tweet.name}}</em></a>
@@ -34,6 +35,7 @@
     <p class="tweet">
       {{tweet.content}}
     </p>
+  </div>
     {% endfor %}
 
   </div>

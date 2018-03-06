@@ -6,7 +6,6 @@ const bodyParser = require('body-parser')
 
 
 module.exports = function (io) {
-  io.sockets.emit('newTweet', { tweet: 'here I AM!' });
 
   router.use(bodyParser.urlencoded({ extended: false }))
   
@@ -19,6 +18,7 @@ module.exports = function (io) {
     let name = req.body.name;
     let text = req.body.text;
     tweetBank.add(name, text);
+    io.sockets.emit('newTweet', { tweet: text, name: name });
     res.redirect('back');
   });
   
