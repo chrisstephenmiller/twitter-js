@@ -12,6 +12,7 @@ nunjucks.configure('views', { noCache: true }); // point nunjucks to the proper 
 const people = [{name: 'Full'}, {name: 'Stacker'}, {name: 'Son'}];
 
 app.get('/one/', function (req, res, next) {
+    console.log(req.url, req.method)
     res.render('index.html', {title: 'Hall of Fame', people: people});
 })
 
