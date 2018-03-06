@@ -71,3 +71,8 @@ code {
   height: 50px;
   width: 50px;
 }
+
+#new-tweet {
+  margin: 20px;
+  text-align: center;
+}

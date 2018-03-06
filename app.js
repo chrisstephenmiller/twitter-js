@@ -3,6 +3,7 @@ const app = express();
 const morgan = require('morgan');
 const nunjucks = require('nunjucks')
 const routes = require('./routes');
+const bodyParser = require('body-parser')
 
 app.listen(3000, () => console.log('Server listening!'))
 
